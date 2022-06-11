@@ -1,3 +1,3 @@
-module github.com/bob-zou/dingtalk-bot-sender
+module github.com/fanwenlin/dingtalk-bot-sender
 
 go 1.15
