@@ -22,6 +22,7 @@ type MessageRender interface {
 type TextMessage struct {
 	Content   string
 	AtMobiles []string
+	AtUserIds []string
 	AtAll     bool
 }
 
@@ -33,6 +34,7 @@ func (m TextMessage) Render() (ret []byte, err error) {
 		},
 		"at": map[string]interface{}{
 			"atMobiles": m.AtMobiles,
+			"atUserIds": m.AtUserIds,
 			"isAtAll":   m.AtAll,
 		},
 	})
